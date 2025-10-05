@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Store | Suplementos Deportivos</title>
+  <meta name="description" content="Fitness Store - Suplementos deportivos, proteínas, creatina, accesorios y más. Envíos rápidos en Uruguay.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1042/1042267.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+  
+  .about-us .about-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.about-us .about-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.about-us ul li {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+    :root {
+      --primary: #00c6ff;
+      --dark: #212529;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background-color: #f8f9fa; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1579758629934-095d31f8fbda?w=1400') center/cover no-repeat;
+      min-height: 80vh;
+    }
+    .hero h1 { animation: fadeInDown 1s ease; }
+    .hero p { animation: fadeInUp 1.2s ease; }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .category-card img { transition: transform 0.3s ease; border-radius: 1rem; }
+    .category-card:hover img { transform: scale(1.05); }
+
+    .card { border: none; transition: transform 0.2s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+
+    footer a:hover { color: var(--primary); }
+
+    .trust-bar {
+      font-weight: 500;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+    }
+
+    .cart-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .cart-btn:hover { background-color: #007bff; }
+    
+    #pagos-envios i {
+  transition: transform 0.3s ease;
+}
+#pagos-envios i:hover {
+  transform: scale(1.2);
+}
+#pagos-envios .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#pagos-envios .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Barra de confianza -->
+  <div class="bg-primary text-white text-center py-2 small trust-bar">
+    🚚 Envíos gratis en compras superiores a $2000 | 💪 Productos 100% originales | 🕐 Envíos en 24 hs
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">Fitness Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Opiniones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="fw-bold display-4">Suplementá tu rendimiento</h1>
+      <p class="lead mb-4">Proteínas, creatinas y más para alcanzar tu máximo potencial.</p>
+      <a href="#productos" class="btn btn-primary btn-lg">Ver Productos</a>
+    </div>
+  </header>
+  <!-- Sección: Sobre Nuestra Tienda -->
+<section class="about-us py-5 bg-light" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Imagen izquierda -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.unsplash.com/photo-1594737625785-c4c5b4a0d5c6?w=900" 
+             alt="Interior de la tienda Fitness Store" 
+             class="img-fluid rounded shadow-lg about-img">
+      </div>
+      
+      <!-- Texto derecha -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold text-primary mb-3">Conocé más sobre <span class="text-dark">Fitness Store</span></h2>
+        <p class="lead text-muted">
+          En <strong>Fitness Store</strong> trabajamos con pasión para ofrecerte los mejores suplementos, 
+          accesorios y herramientas que potencian tu entrenamiento y bienestar físico.
+        </p>
+        <p>
+          Nos enorgullece ser una tienda uruguaya con una visión clara: acompañar a cada cliente 
+          en su camino hacia una vida más saludable y activa. 
+          Nuestro equipo está formado por expertos en nutrición y fitness, 
+          dispuestos a asesorarte en cada compra.
+        </p>
+        <ul class="list-unstyled mt-3">
+          <li><i class="fa-solid fa-check text-success me-2"></i> Productos 100% originales y certificados</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i> Envíos rápidos en todo el país</li>
+          <li><i class="fa-solid fa-check text-success me-2"></i> Atención personalizada por WhatsApp</li>
+        </ul>
+        <a href="#products" class="btn btn-primary mt-3">
+          Ver Catálogo
+          <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Categorías -->
+  <section id="categorias" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Categorías destacadas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1584367369853-8b966cf22a8b?w=800" class="img-fluid mb-3">
+            <h5>Proteínas</h5>
+            <p>Fortalecé tus músculos con la mejor calidad en proteínas premium.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1620179946900-cc76a1ab759b?w=800" class="img-fluid mb-3">
+            <h5>Creatinas</h5>
+            <p>Potenciá tu fuerza y recuperación con fórmulas científicamente probadas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f2?w=800" class="img-fluid mb-3">
+            <h5>Accesorios</h5>
+            <p>Todo lo que necesitás para tus entrenamientos diarios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Nuestros Productos</h2>
+      <input type="text" id="search" class="form-control mb-4" placeholder="Buscar producto...">
+      <div id="product-list" class="row g-4"></div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Lo que dicen nuestros clientes</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Excelente calidad y envío rapidísimo. Las proteínas son top."</p>
+            <footer class="blockquote-footer text-white-50">Sofía M.</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Compré creatina y quedé muy conforme. Atención excelente."</p>
+            <footer class="blockquote-footer text-white-50">Rodrigo L.</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"La mejor tienda online fitness, sin dudas."</p>
+            <footer class="blockquote-footer text-white-50">Martín G.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Sección: Pagos y Envíos -->
+<section id="pagos-envios" class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-primary">Formas de Pago y Envíos</h2>
+    <p class="text-muted mb-5">Comprá con confianza y recibí tus productos rápido y seguro</p>
+
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Mercado Pago -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-4 text-center">
+          <i class="fa-brands fa-cc-mercadopago fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Mercado Pago</h5>
+          <p class="text-muted">Paga con tarjeta, débito o saldo disponible a través de Mercado Pago de manera rápida y segura.</p>
+        </div>
+      </div>
+
+      <!-- Transferencias y tarjetas -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-4 text-center">
+          <i class="fa-solid fa-credit-card fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Tarjetas y Transferencias</h5>
+          <p class="text-muted">Aceptamos todas las tarjetas principales y transferencias bancarias. Tu compra 100% segura.</p>
+        </div>
+      </div>
+
+      <!-- Envío cadetería -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-4 text-center">
+          <i class="fa-solid fa-truck-fast fa-3x text-warning mb-3"></i>
+          <h5 class="fw-bold">Envíos por Cadetería</h5>
+          <p class="text-muted">Entregas rápidas en Montevideo y envíos al interior mediante cadetería confiable y certificada.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Preguntas Frecuentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              ¿Cuánto demora el envío?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Los envíos demoran entre 24 y 48 hs dentro de Uruguay.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              ¿Puedo pagar con Mercado Pago?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Sí, aceptamos Mercado Pago, transferencias y tarjetas de crédito.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer id="contact" class="text-white bg-dark pt-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Información de la tienda -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold text-uppercase mb-3">🏋️‍♂️ Fitness Store</h5>
+        <p>
+          Tu tienda de suplementos y accesorios deportivos de confianza.  
+          Ofrecemos productos originales, asesoramiento profesional y envíos a todo Uruguay.
+        </p>
+        <p><i class="fa-solid fa-location-dot me-2"></i>Las Piedras, Canelones - Uruguay</p>
+        <p><i class="fa-solid fa-clock me-2"></i>Lunes a Viernes: 9:00 - 19:00 | Sábados: 10:00 - 15:00</p>
+      </div>
+
+      <!-- Contacto y envíos -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="fw-bold mb-3">📞 Contacto & Envíos</h6>
+        <p><i class="fa-solid fa-phone me-2"></i>+598 99946914</p>
+        <p><i class="fa-solid fa-envelope me-2"></i>
+          <a href="mailto:info@fitnessstore.com" class="text-white text-decoration-none">info@fitnessstore.com</a>
+        </p>
+        <p><i class="fa-solid fa-truck-fast me-2"></i>Envíos rápidos en Montevideo y todo el país mediante cadetería certificada.</p>
+        <p><i class="fa-solid fa-credit-card me-2"></i>Pagos con Mercado Pago, tarjetas y transferencias bancarias.</p>
+      </div>
+
+      <!-- Redes sociales y newsletter -->
+      <div class="col-lg-4 col-md-12">
+        <h6 class="fw-bold mb-3">🌐 Síguenos</h6>
+        <div class="mb-3">
+          <a href="#" class="text-white me-3 fs-4"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <h6 class="fw-bold mb-2">📧 Newsletter</h6>
+        <form class="d-flex flex-column flex-sm-row gap-2" onsubmit="alert('¡Gracias por suscribirte!'); return false;">
+          <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+          <button class="btn btn-primary" type="submit">Suscribirse</button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Línea inferior -->
+  <div class="text-center py-3 mt-4 border-top border-secondary">
+    <small>© 2025 Fitness Store | Todos los derechos reservados | Diseñado con ❤️ en Uruguay</small>
+  </div>
+</footer>
+
+
+  <!-- Botón de carrito -->
+  <button class="cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </button>
+
+  <!-- Modal del carrito -->
+  <div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Tu Carrito</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="cart-items"></div>
+        <div class="modal-footer d-flex justify-content-between">
+          <strong>Total: $<span id="cart-total">0</span></strong>
+          <button class="btn btn-success" onclick="checkout()">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const products = [
+      { id: 1, name: "Proteína Whey Gold Standard", price: 2400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692692-MLA51183631472_082022-F.webp" },
+      { id: 2, name: "Creatina Micronizada Universal", price: 1800, img: "https://http2.mlstatic.com/D_NQ_NP_2X_645842-MLA51214445593_082022-F.webp" },
+      { id: 3, name: "Pre-entreno C4 Original", price: 2100, img: "https://http2.mlstatic.com/D_NQ_NP_2X_604788-MLA51184456387_082022-F.webp" },
+      { id: 4, name: "Shaker Pro 700ml", price: 350, img: "https://http2.mlstatic.com/D_NQ_NP_2X_717683-MLA50064703439_052022-F.webp" },
+      { id: 5, name: "BCAA 2:1:1", price: 1600, img: "https://http2.mlstatic.com/D_NQ_NP_2X_619829-MLA50064701665_052022-F.webp" },
+      { id: 6, name: "Proteína Vegetal Vegan Pro", price: 2200, img: "https://http2.mlstatic.com/D_NQ_NP_2X_700083-MLA48018568569_102021-F.webp" },
+      { id: 7, name: "Guantes de Entrenamiento", price: 750, img: "https://http2.mlstatic.com/D_NQ_NP_2X_797266-MLA48314795835_112021-F.webp" },
+      { id: 8, name: "Omega 3 - 100 cápsulas", price: 950, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692253-MLA48183367962_112021-F.webp" },
+      { id: 9, name: "Multivitamínico Opti-Men", price: 1400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_629779-MLA48018767669_102021-F.webp" },
+      { id: 10, name: "Cinturón de Entrenamiento", price: 1300, img: "https://http2.mlstatic.com/D_NQ_NP_2X_607255-MLA50064697101_052022-F.webp" }
+    ];
+
+    let cart = [];
+
+    function renderProducts(list = products) {
+      const container = document.getElementById("product-list");
+      container.innerHTML = "";
+      list.forEach(p => {
+        container.innerHTML += `
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src="${p.img}" class="card-img-top" loading="lazy" alt="${p.name}">
+              <div class="card-body">
+                <h5 class="card-title">${p.name}</h5>
+                <p class="card-text fw-bold">$${p.price}</p>
+                <button class="btn btn-primary w-100" onclick="addToCart(${p.id})">
+                  <i class="fa-solid fa-cart-plus me-2"></i>Agregar
+                </button>
+              </div>
+            </div>
+          </div>`;
+      });
+    }
+
+    function addToCart(id) {
+      const product = products.find(p => p.id === id);
+      const existing = cart.find(item => item.id === id);
+      if (existing) existing.quantity++;
+      else cart.push({ ...product, quantity: 1 });
+      renderCart();
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      renderCart();
+    }
+
+    function changeQuantity(id, delta) {
+      const item = cart.find(p => p.id === id);
+      if (!item) return;
+      item.quantity += delta;
+      if (item.quantity <= 0) removeFromCart(id);
+      renderCart();
+    }
+
+    function renderCart() {
+      const itemsContainer = document.getElementById("cart-items");
+      const totalContainer = document.getElementById("cart-total");
+      itemsContainer.innerHTML = "";
+      let total = 0;
+
+      if (cart.length === 0) {
+        itemsContainer.innerHTML = "<p class='text-center'>Tu carrito está vacío.</p>";
+        totalContainer.textContent = "0";
+        return;
+      }
+
+      cart.forEach(item => {
+        const subtotal = item.price * item.quantity;
+        total += subtotal;
+        itemsContainer.innerHTML += `
+          <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+            <div>
+              <strong>${item.name}</strong><br>
+              <small>$${item.price} c/u</small>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="btn btn-sm btn-outline-secondary me-1" onclick="changeQuantity(${item.id}, -1)">-</button>
+              <span>${item.quantity}</span>
+              <button class="btn btn-sm btn-outline-secondary ms-1" onclick="changeQuantity(${item.id}, 1)">+</button>
+              <button class="btn btn-sm btn-danger ms-3" onclick="removeFromCart(${item.id})"><i class="fa fa-trash"></i></button>
+            </div>
+          </div>`;
+      });
+
+      totalContainer.textContent = total;
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert("Tu carrito está vacío.");
+      let message = "🛒 Pedido Fitness Store:%0A";
+      let total = 0;
+      cart.forEach(item => {
+        message += `${item.name} x${item.quantity} - $${item.price * item.quantity}%0A`;
+        total += item.price * item.quantity;
+      });
+      message += `%0ATotal: $${total}`;
+      const url = `https://wa.me/59899946914?text=${message}`;
+      window.open(url, "_blank");
+    }
+
+    document.getElementById("search").addEventListener("input", e => {
+      const term = e.target.value.toLowerCase();
+      const filtered = products.filter(p => p.name.toLowerCase().includes(term));
+      renderProducts(filtered);
+    });
+
+    renderProducts();
+  </script>
+</body>
+</html>
