@@ -1,0 +1,136 @@
+
+    .btn { transition: background-color 0.3s ease, transform 0.2s ease; }
+.btn:hover { transform: scale(1.03); }
+
+  
+  .about-us .about-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.about-us .about-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.about-us ul li {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+    :root {
+      --primary: #00c6ff;
+      --dark: #212529;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background-color: #f8f9fa; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.829)),
+        url('/hero.jpg') center/cover no-repeat;
+      min-height: 80vh;
+    }
+    .hero h1 { animation: fadeInDown 1s ease; }
+    .hero p { animation: fadeInUp 1.2s ease; }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .category-card img { transition: transform 0.3s ease; border-radius: 1rem; }
+    .category-card:hover img { transform: scale(1.05); }
+
+    .card { border: none; transition: transform 0.2s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+
+    footer a:hover { color: var(--primary); }
+
+    .trust-bar {
+      font-weight: 500;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+    }
+
+    .cart-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .cart-btn:hover { background-color: #007bff; }
+    
+    #pagos-envios i {
+  transition: transform 0.3s ease;
+}
+#pagos-envios i:hover {
+  transform: scale(1.2);
+}
+#pagos-envios .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#pagos-envios .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagen de la sección About Us más chica y responsive */
+.custom-img {
+  max-width: 300px;  /* Ajusta el tamaño máximo de la imagen */
+  width: 100%;       /* Mantiene responsividad en móviles */
+  height: auto;
+}
+/* Categorías */
+.category-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hover-card i {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.hover-card:hover i {
+  transform: scale(1.2);
+  color: #ff7f50; /* Color destacado al hover */
+}
+
+
+/* Categorías */
+.category-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hover-card i {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.hover-card:hover i {
+  transform: scale(1.2);
+  color: #ff7f50; /* Color destacado al hover */
+}
+
