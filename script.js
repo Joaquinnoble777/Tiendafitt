@@ -1,15 +1,21 @@
-  const products = [
-    { id: 1, name: "Proteína Whey Gold Standard", price: 2400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692692-MLA51183631472_082022-F.webp" },
-    { id: 2, name: "Creatina Micronizada Universal", price: 1800, img: "https://http2.mlstatic.com/D_NQ_NP_2X_645842-MLA51214445593_082022-F.webp" },
-    { id: 3, name: "Pre-entreno C4 Original", price: 2100, img: "https://http2.mlstatic.com/D_NQ_NP_2X_604788-MLA51184456387_082022-F.webp" },
-    { id: 4, name: "Shaker Pro 700ml", price: 350, img: "https://http2.mlstatic.com/D_NQ_NP_2X_717683-MLA50064703439_052022-F.webp" },
-    { id: 5, name: "BCAA 2:1:1", price: 1600, img: "https://http2.mlstatic.com/D_NQ_NP_2X_619829-MLA50064701665_052022-F.webp" },
-    { id: 6, name: "Proteína Vegetal Vegan Pro", price: 2200, img: "https://http2.mlstatic.com/D_NQ_NP_2X_700083-MLA48018568569_102021-F.webp" },
-    { id: 7, name: "Guantes de Entrenamiento", price: 750, img: "https://http2.mlstatic.com/D_NQ_NP_2X_797266-MLA48314795835_112021-F.webp" },
-    { id: 8, name: "Omega 3 - 100 cápsulas", price: 950, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692253-MLA48183367962_112021-F.webp" },
-    { id: 9, name: "Multivitamínico Opti-Men", price: 1400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_629779-MLA48018767669_102021-F.webp" },
-    { id: 10, name: "Cinturón de Entrenamiento", price: 1300, img: "https://http2.mlstatic.com/D_NQ_NP_2X_607255-MLA50064697101_052022-F.webp" }
-  ];
+const products = [
+  { id: 1, name: "Proteína Whey Gold Standard", price: 2400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692692-MLA51183631472_082022-F.webp" },
+  { id: 2, name: "Creatina Micronizada Universal", price: 1800, img: "https://http2.mlstatic.com/D_NQ_NP_2X_645842-MLA51214445593_082022-F.webp" },
+  { id: 3, name: "Pre-entreno C4 Original", price: 2100, img: "https://http2.mlstatic.com/D_NQ_NP_2X_604788-MLA51184456387_082022-F.webp" },
+  { id: 4, name: "Shaker Pro 700ml", price: 350, img: "https://images.unsplash.com/photo-1615484482855-1f3c1f7f3c2a?w=300" },
+  { id: 5, name: "BCAA 2:1:1", price: 1600, img: "https://http2.mlstatic.com/D_NQ_NP_2X_619829-MLA50064701665_052022-F.webp" },
+  { id: 6, name: "Proteína Vegetal Vegan Pro", price: 2200, img: "https://http2.mlstatic.com/D_NQ_NP_2X_700083-MLA48018568569_102021-F.webp" },
+  { id: 7, name: "Guantes de Entrenamiento", price: 750, img: "https://http2.mlstatic.com/D_NQ_NP_2X_797266-MLA48314795835_112021-F.webp" },
+  { id: 8, name: "Omega 3 - 100 cápsulas", price: 950, img: "https://http2.mlstatic.com/D_NQ_NP_2X_692253-MLA48183367962_112021-F.webp" },
+  { id: 9, name: "Multivitamínico Opti-Men", price: 1400, img: "https://http2.mlstatic.com/D_NQ_NP_2X_629779-MLA48018767669_102021-F.webp" },
+  { id: 10, name: "Cinturón de Entrenamiento", price: 1300, img: "https://http2.mlstatic.com/D_NQ_NP_2X_607255-MLA50064697101_052022-F.webp" },
+
+  // Shakers
+  { id: 11, name: "Shaker Pro 700ml", price: 350, img: "https://images.unsplash.com/photo-1615484482855-1f3c1f7f3c2a?w=300" },
+  { id: 12, name: "Shaker Gym 500ml", price: 280, img: "https://images.unsplash.com/photo-1598973877563-0f3e6e0c2f7a?w=300" },
+  { id: 13, name: "Shaker Sport 600ml", price: 310, img: "https://images.unsplash.com/photo-1620141409000-df6d5c2c7b6f?w=300" },
+  { id: 14, name: "Shaker Fitness 700ml", price: 350, img: "https://images.unsplash.com/photo-1615484482855-1f3c1f7f3c2a?w=300" }
+];
 
   let cart = [];
 
